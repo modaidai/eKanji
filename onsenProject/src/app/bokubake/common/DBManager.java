@@ -6,9 +6,9 @@ import java.sql.DriverManager;
 public class DBManager {
 
 	private static String USER = "postgres";
-	private static String PASS = "root";
+	private static String PASS = "postgres";
 	private static String SERVER_NAME = "localhost";
-	private static String DB_NAME = "onsen";
+	private static String DB_NAME = "bokubake";
 
 	public static Connection getConnection() throws Exception{
 		try {

@@ -68,7 +68,7 @@ public class UserLoginServlet extends HttpServlet {
 		session.setAttribute("member", member);
 
 		RequestDispatcher rd = request
-				.getRequestDispatcher("/ShowTag");
+				.getRequestDispatcher("/view/list.jsp");
 		rd.forward(request, response);
 	}
 

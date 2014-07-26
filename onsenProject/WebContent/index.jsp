@@ -19,7 +19,7 @@
 			<!--ここから下に中身を記述して下さい。-->
 			<div id="form">
 				<p class="form-title">Login</p>
-				<form action="/UserLogin" method="post">
+				<form action="<%= request.getContextPath() %>/UserLogin" method="post">
 					<p>User ID</p>
 					<p class="mail">
 						<input type="email" name="userId" />

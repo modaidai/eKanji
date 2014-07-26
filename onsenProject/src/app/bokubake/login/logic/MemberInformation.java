@@ -12,13 +12,13 @@ public class MemberInformation {
 
 	public static Member findByMailAddressAndPassword(String userId, String passwd) throws Exception {
 		String sql = "SELECT id" +
-				     "     , user_id" +
+				     "     , mail_address" +
 				     "     , password" +
-				     "     , user_name" +
+				     "     , name" +
 				     "     , twitter_id" +
 				     "     , my_photo_path" +
-				     "  FROM bokubake.users" +
-				     " WHERE user_id = ?" +
+				     "  FROM member" +
+				     " WHERE mail_address = ?" +
 				     "   AND password = ?";
 
 		Connection conn = DBManager.getConnection();
@@ -32,9 +32,9 @@ public class MemberInformation {
 		Member member = new Member();
 		while (rs.next()) {
 			member.setId(rs.getBigDecimal("id"));
-			member.setUserId(rs.getString("user_id"));
+			member.setUserId(rs.getString("mail_address"));
 			member.setPassWord(rs.getString("password"));
-			member.setUserName(rs.getString("user_name"));
+			member.setUserName(rs.getString("name"));
 			member.setTwitterId(rs.getString("twitter_id"));
 			member.setMyPhotoPath(rs.getString("my_photo_path"));
 		}
