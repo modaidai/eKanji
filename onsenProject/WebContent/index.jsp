@@ -8,7 +8,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Login JSP</title>
-<link href="../css/style.css" rel="stylesheet" type="text/css" />
+<link href="./css/style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
 	<div id="main">
@@ -29,7 +29,7 @@
 						<input type="password" name="passwd" />
 					</p>
 
-					<a href="dammy" target="_self">新規登録の方はこちらへ</a>
+					<a href="/UserRegister" target="_self">新規登録の方はこちらへ</a>
 					<p class="submit">
 						<input type="submit" value="Login" />
 					</p>
