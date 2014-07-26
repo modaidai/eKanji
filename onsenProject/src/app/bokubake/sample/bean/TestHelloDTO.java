@@ -1,4 +1,4 @@
-package jp.co.rakus.onsen.sample.bean;
+package app.bokubake.sample.bean;
 
 import java.math.BigDecimal;
 

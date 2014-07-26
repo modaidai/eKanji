@@ -1,4 +1,4 @@
-package jp.co.rakus.onsen.sample;
+package app.bokubake.sample;
 
 import java.io.IOException;
 import java.util.List;
@@ -10,8 +10,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import jp.co.rakus.onsen.sample.bean.TestHelloDTO;
-import jp.co.rakus.onsen.sample.logic.SampleLogic;
+import app.bokubake.sample.bean.TestHelloDTO;
+import app.bokubake.sample.logic.SampleLogic;
+
 
 /**
  * Servlet implementation class HelloWorld

@@ -1,4 +1,4 @@
-package jp.co.rakus.onsen.sample.logic;
+package app.bokubake.sample.logic;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
@@ -8,9 +8,10 @@ import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
 
-import jp.co.rakus.onsen.common.DBManager;
-import jp.co.rakus.onsen.sample.SampleConst;
-import jp.co.rakus.onsen.sample.bean.TestHelloDTO;
+import app.bokubake.common.DBManager;
+import app.bokubake.sample.SampleConst;
+import app.bokubake.sample.bean.TestHelloDTO;
+
 
 public class SampleLogic {
 

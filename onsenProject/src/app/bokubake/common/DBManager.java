@@ -1,4 +1,4 @@
-package jp.co.rakus.onsen.common;
+package app.bokubake.common;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
