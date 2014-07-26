@@ -7,9 +7,10 @@ public class Member implements Serializable {
 
 	private BigDecimal id;
 	private String userId;
+	private String passWord;
 	private String userName;
 	private String twitterId;
-	private String myPhoto;
+	private String myPhotoPath;
 
 
 	public BigDecimal getId() {
@@ -36,13 +37,17 @@ public class Member implements Serializable {
 	public void setTwitterId(String twitterId) {
 		this.twitterId = twitterId;
 	}
-	public String getMyPhoto() {
-		return myPhoto;
+	public String getPassWord() {
+		return passWord;
 	}
-	public void setMyPhoto(String myPhoto) {
-		this.myPhoto = myPhoto;
+	public void setPassWord(String passWord) {
+		this.passWord = passWord;
 	}
-
-
+	public String getMyPhotoPath() {
+		return myPhotoPath;
+	}
+	public void setMyPhotoPath(String myPhotoPath) {
+		this.myPhotoPath = myPhotoPath;
+	}
 
 }

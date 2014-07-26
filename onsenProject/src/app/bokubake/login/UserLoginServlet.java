@@ -44,7 +44,12 @@ public class UserLoginServlet extends HttpServlet {
 		String password = request.getParameter("passwd");
 
 		// ログイン処理を行います
-		Member member = LoginLogic.execute(userId, password);
+		Member member;
+		try {
+			member = LoginLogic.execute(userId, password);
+		} catch (Exception e) {
+			throw new ServletException(e);
+		}
 
 		// ログインに失敗したらエラーメッセージをリクエストスコープに入れて
 		// ログイン画面に戻ります
